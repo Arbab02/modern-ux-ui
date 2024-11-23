@@ -1,0 +1,14 @@
+.hero {
+  filter: drop-shadow(2px 2px 30px #ea4dea);
+}
+
+/* .herobg {
+  background-image: url('./assets/herobg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+body {
+  background-image: url('./assets/herobg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
