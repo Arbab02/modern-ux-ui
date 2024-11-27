@@ -1,7 +1,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Heroimg from '../assets/hero.png'
+import Diamond from '../assets/diamond.png'
 // import Image from "next/image";
 // import Link from "next/link";
 
@@ -51,13 +51,13 @@ const Hero = () => {
             variants={childVariants}
           >
            Learn to live in Future with&nbsp;
-            <br className="hidden lg:inline-block" />
-               DarkStone!
+            {/* <br className="hidden lg:inline-block" /> */}
+               Dark<span className='text-indigo-500  font-bold'>Stone!</span>
           </motion.h1>
           <motion.p className="mb-8 leading-relaxed text-2xl text-justify text-white" variants={childVariants}>
           Government College of Technology, SITE Karachi, formerly known as Karachi Polytechnic Institute, is a pioneering government technical institute in Pakistan.
          
-          <a href='/addTopic'><button className="block rounded-full text-2xl bg-gradient-to-r from-indigo-700 via-indigo-800 to-indigo-900 font-normal mt-4 text-white px-9 py-3 shadow-lg hover:from-purple-600 hover:via-pink-600 hover:to-pink-600 transition duration-300">
+          <a href='/addTopic'><button className="block rounded-full text-xl bg-gradient-to-r from-indigo-700 via-indigo-800 to-indigo-900 font-normal mt-4 text-white px-7 py-3 shadow-lg hover:from-purple-600 hover:via-pink-600 hover:to-pink-600 transition duration-300">
   Join Our Courses
 </button>
 </a>
@@ -73,14 +73,12 @@ const Hero = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
         >
           <img
-            className="object-cover object-center rounded "
+            className="object-cover object-center rounded spinner"
             alt="hero"
-            src={Heroimg}
+            src={Diamond}
             width='420'
             height='420'
-            style={{
-              animation: "spin 15s linear infinite",
-            }}
+            
           />
         </motion.div>
       </div>
