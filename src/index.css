@@ -2,13 +2,55 @@
   filter: drop-shadow(2px 2px 30px #ea4dea);
 }
 
-/* .herobg {
+.herobg {
+  background-image: url('./assets/herobg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* body {
   background-image: url('./assets/herobg.png');
   background-size: cover;
   background-repeat: no-repeat;
 } */
-body {
-  background-image: url('./assets/herobg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+
+
+.spinner {
+  
+  animation: spin 10s linear infinite; /* Infinite spinning animation */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shine {
+  0% {
+    /* border-top: 1px solid #ea4dea; */
+    box-shadow: 5px 5px 5px #ea4dea;
+  }
+  25% {
+    /* border-right: 1px solid #ea4dea; */
+    box-shadow: -5px -5px -5px #ea4dea;
+  }
+  50% {
+    /* border-bottom: 1px solid #ea4dea; */
+    box-shadow: 5px 5px 5px #ea4dea;
+  }
+  75% {
+    /* border-left: 1px solid #ea4dea; */
+    box-shadow: 5px 5px 5px #ea4dea;
+  }
+  100% {
+    /* border-top: 1px solid #ea4dea; */
+    box-shadow: 5px 5px 5px #ea4dea;
+  }
+}
+
+.animate-shine {
+  animation: shine 10s linear infinite;
 }
