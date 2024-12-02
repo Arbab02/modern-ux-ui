@@ -9,15 +9,15 @@ const ServiceCard = ({ icon, title, description, bgColor, shadowColor }) => {
 
 
   return (
-    <div className="rounded bg-[#0a0e21]  p-6 text-center " >
+    <div className="rounded bg-gradient-to-tr from-[#0A0E21] via-[#110E3C] to-[#0A0E21] p-6 text-center " >
       <div
         className={`mx-auto flex h-28 w-28 -translate-y-12 transform items-center justify-center rounded-full  ${bgColor}  ${shadowColor}`}
       ref={cardItemRef}
       >
         {icon}
       </div>
-      <h1 className="text-white mb-3 text-xl font-medium lg:px-14">{title}</h1>
-      <p className="px-4 text-white">{description}</p>
+      <h1 className="text-white mb-3 text-2xl font-medium lg:px-14">{title}</h1>
+      <p className="px-4 text-lg text-white">{description}</p>
     </div>
   );
 };
@@ -70,7 +70,7 @@ const Services = () => {
 
   return (
     <div className="h-full min-h-screen w-full bg-[#050816] pt-12 p-4">
-      <h1 className='text-6xl text-white font-bold text-center mb-14'>Our Services</h1>
+      <h1 className='text-6xl text-white font-bold text-center mb-14'>Our <span className='text-indigo-500'>Services</span> </h1>
       <div className="grid gap-14 md:grid-cols-3 md:gap-5">
         {services.map((service, index) => (
           <ServiceCard
