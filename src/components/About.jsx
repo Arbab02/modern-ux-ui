@@ -1,5 +1,5 @@
 import React from "react";
-import Diamond from '../assets/diamond.png'
+import Torusknot from '../assets/torusknot.png'
 const AboutUs = () => {
   return (
     <section className="text-white bg-[#050816] body-font">
@@ -9,7 +9,7 @@ const AboutUs = () => {
           <img
             className="object-cover object-center rounded"
             alt="About Us"
-            src={Diamond}
+            src={Torusknot}
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
