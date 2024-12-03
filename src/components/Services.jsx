@@ -9,7 +9,7 @@ const ServiceCard = ({ icon, title, description, bgColor, shadowColor }) => {
 
 
   return (
-    <div className="rounded bg-gradient-to-tr from-[#0A0E21] via-[#110E3C] to-[#0A0E21] p-6 text-center " >
+    <div className="rounded lg:mt-[12rem] lg:w-[31%] lg:h-[80%] text-center h-[50%] w-[85%] mt-20 p-5 mx-auto bg-gradient-to-tr from-[#0A0E21] via-[#110E3C] to-[#0A0E21] " >
       <div
         className={`mx-auto flex h-28 w-28 -translate-y-12 transform items-center justify-center rounded-full  ${bgColor}  ${shadowColor}`}
       ref={cardItemRef}
@@ -69,9 +69,10 @@ const Services = () => {
   ];
 
   return (
-    <div className="h-full min-h-screen w-full bg-[#050816] pt-12 p-4">
-      <h1 className='text-6xl text-white font-bold text-center mb-14'>Our <span className='text-indigo-500'>Services</span> </h1>
-      <div className="grid gap-14 md:grid-cols-3 md:gap-5">
+    <div className="lg:h-[35rem] xl:py-16 py-8 bg-[#050816] lg:flex lg:justify-evenly xl:flex xl:justify-evenly text-center ">
+      <h1 className='text-6xl text-white font-bold xl:absolute lg:absolute block py-10'>Our <span className='text-indigo-500'>Services</span> </h1>
+     
+    
         {services.map((service, index) => (
           <ServiceCard
             key={index}
@@ -82,8 +83,9 @@ const Services = () => {
             shadowColor={service.shadowColor}
           />
         ))}
+   
       </div>
-    </div>
+   
   );
 };
 
