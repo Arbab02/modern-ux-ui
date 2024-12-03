@@ -1,15 +1,15 @@
 import React from "react";
-import Torusknot from '../assets/torusknot.png'
+import Diamond from '../assets/diamond.png'
 const AboutUs = () => {
   return (
     <section className="text-white bg-[#050816] body-font">
-      <h1 className='text-6xl text-white font-bold text-center pb-12'>About <span className='text-indigo-500'>Us</span> </h1>
+      <h1 className='text-6xl text-white font-bold text-center py-16 lg:py-28'>About <span className='text-indigo-500'>Us</span> </h1>
       <div className="container mx-auto flex px-5 py-18 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
           <img
-            className="object-cover object-center rounded spinner"
+            className="object-cover object-center rounded"
             alt="About Us"
-            src={Torusknot}
+            src={Diamond}
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
